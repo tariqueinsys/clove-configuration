@@ -1,8 +1,7 @@
-my:
-	greeting: Hello Tarique
-list
-	values: one, two, three
-db:
-	connection: connecting...
-	host: 127.0.0.1
-	port: 1100
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/tariqueinsys/clove-configuration
+        default-label: main 
